@@ -1,0 +1,288 @@
+#include <oxstd.oxh>
+#import <packages/PcGive/pcgive_ects>
+
+run_1()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 1)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"Constant", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+
+	model.SetSelSampleByDates(dayofcalendar(2004, 1, 1), dayofcalendar(2009, 5, 1));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+					   saveresults("/Users/stuartlee/Desktop/Project/TESTRESULTS.csv");
+	delete model;
+}
+
+run_2()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 2)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+
+	model.SetSelSampleByDates(dayofcalendar(2004, 1, 1), dayofcalendar(2009, 5, 1));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+run_3()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 1)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+
+	model.SetSelSampleByDates(dayofcalendar(2004, 1, 1), dayofcalendar(2009, 5, 1));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+run_4()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 2)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+	model.Select(Y_VAR, {"ALL SHARE %", 1, 1});
+
+	model.SetSelSampleByDates(dayofcalendar(2004, 1, 1), dayofcalendar(2009, 5, 1));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+run_5()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 3)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+	model.Select(Y_VAR, {"ALL SHARE %", 1, 2});
+
+	model.SetSelSampleByDates(dayofcalendar(2004, 1, 1), dayofcalendar(2009, 5, 1));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+run_6()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 4)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+
+	model.SetSelSampleByDates(dayofcalendar(2009, 5, 1), dayofcalendar(2016, 7, 11));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+run_7()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 5)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+	model.Select(Y_VAR, {"ALL SHARE %", 1, 1});
+
+	model.SetSelSampleByDates(dayofcalendar(2009, 5, 1), dayofcalendar(2016, 7, 11));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+run_8()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 6)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+	model.Select(Y_VAR, {"ALL SHARE %", 1, 2});
+
+	model.SetSelSampleByDates(dayofcalendar(2009, 5, 1), dayofcalendar(2016, 7, 11));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+run_9()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 7)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+
+	model.SetSelSampleByDates(dayofcalendar(2004, 1, 1), dayofcalendar(2016, 7, 11));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+run_10()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 8)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+	model.Select(Y_VAR, {"ALL SHARE %", 1, 1});
+
+	model.SetSelSampleByDates(dayofcalendar(2004, 1, 1), dayofcalendar(2016, 7, 11));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+run_11()
+{
+// This program requires a licenced version of PcGive Professional.
+	//--- Ox code for EQ( 9)
+	decl model = new PcGive();
+
+	model.Load("/Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv");
+	model.Deterministic(-1);
+
+	model.Select(Y_VAR, {"ALL SHARE %", 0, 0});
+	model.Select(X_VAR, {"MON", 0, 0});
+	model.Select(X_VAR, {"TUE", 0, 0});
+	model.Select(X_VAR, {"WED", 0, 0});
+	model.Select(X_VAR, {"THU", 0, 0});
+	model.Select(X_VAR, {"FRI", 0, 0});
+	model.Select(Y_VAR, {"ALL SHARE %", 1, 2});
+
+	model.SetSelSampleByDates(dayofcalendar(2004, 1, 1), dayofcalendar(2016, 7, 11));
+	model.SetMethod(M_OLS);
+	model.Estimate();
+	model.TestSummary();
+
+	delete model;
+}
+
+main()
+{
+	run_1();
+	run_2();
+	run_3();
+	run_4();
+	run_5();
+	run_6();
+	run_7();
+	run_8();
+	run_9();
+	run_10();
+	run_11();
+}

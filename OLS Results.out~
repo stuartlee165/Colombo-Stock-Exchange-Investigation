@@ -1,0 +1,229 @@
+
+Ox Professional version 7.00 (OS_X/U) (C) J.A. Doornik, 1994-2013
+
+---- PcGive 14.0B3 session started at 15:18:01 on 29-07-2016 ----
+
+EQ( 1) Modelling ALL SHARE % by OLS
+       The dataset is: /Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv
+       The estimation sample is: 2004-01-01 - 2009-05-01
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+MON                 -0.155613    0.07458    -2.09  0.0371   0.0031
+TUE                 -0.114029    0.07458    -1.53  0.1265   0.0017
+WED                  0.100391    0.07458     1.35  0.1785   0.0013
+THU                  0.168391    0.07445     2.26  0.0239   0.0037
+FRI                  0.196908    0.07445     2.64  0.0083   0.0050
+
+sigma                 1.24352  RSS                2144.78294
+R^2                  0.013665  F(4,1387) =   4.804 [0.001]**
+Adj.R^2             0.0108205  log-likelihood       -2276.04
+no. of observations      1392  no. of parameters           5
+mean(Y)             0.0394156  se(Y)                  1.2503
+
+AR 1-2 test:      F(2,1385) =   21.972 [0.0000]**
+ARCH 1-1 test:    F(1,1390) =   72.657 [0.0000]**
+Normality test:   Chi^2(2)  =   1571.2 [0.0000]**
+Hetero test: no regressors for test
+Hetero-X test: no regressors for test
+RESET23 test:     F(2,1385) =  0.71474 [0.4895]  
+
+EQ( 2) Modelling ALL SHARE % by OLS
+       The dataset is: /Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv
+       The estimation sample is: 2004-01-01 - 2009-05-01
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+ALL SHARE %_1        0.162448    0.02650     6.13  0.0000   0.0264
+MON                 -0.187715    0.07380    -2.54  0.0111   0.0046
+TUE                -0.0887501    0.07373    -1.20  0.2289   0.0010
+WED                  0.118915    0.07368     1.61  0.1068   0.0019
+THU                  0.152469    0.07353     2.07  0.0383   0.0031
+FRI                  0.169554    0.07362     2.30  0.0214   0.0038
+
+sigma                 1.22744  RSS                2088.17288
+R^2                 0.0396987  F(5,1386) =   11.46 [0.000]**
+Adj.R^2             0.0362344  log-likelihood       -2257.42
+no. of observations      1392  no. of parameters           6
+mean(Y)             0.0394156  se(Y)                  1.2503
+
+AR 1-2 test:      F(2,1384) =   3.4671 [0.0315]* 
+ARCH 1-1 test:    F(1,1390) =   46.079 [0.0000]**
+Normality test:   Chi^2(2)  =   1680.6 [0.0000]**
+Hetero test:      F(6,1385) =   11.062 [0.0000]**
+Hetero-X test:    F(6,1385) =   11.062 [0.0000]**
+RESET23 test:     F(2,1384) =  0.61656 [0.5399]  
+
+EQ( 3) Modelling ALL SHARE % by OLS
+       The dataset is: /Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv
+       The estimation sample is: 2004-01-01 - 2009-05-01
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+ALL SHARE %_1        0.173385    0.02681     6.47  0.0000   0.0293
+ALL SHARE %_2      -0.0672275    0.02681    -2.51  0.0123   0.0045
+MON                 -0.178675    0.07375    -2.42  0.0155   0.0042
+TUE                -0.0737628    0.07383   -0.999  0.3180   0.0007
+WED                  0.109700    0.07363     1.49  0.1365   0.0016
+THU                  0.143577    0.07348     1.95  0.0509   0.0027
+FRI                  0.174301    0.07350     2.37  0.0179   0.0040
+
+sigma                 1.22511  RSS                2078.73349
+R^2                 0.0440396  F(6,1385) =   10.63 [0.000]**
+Adj.R^2             0.0398983  log-likelihood       -2254.27
+no. of observations      1392  no. of parameters           7
+mean(Y)             0.0394156  se(Y)                  1.2503
+
+AR 1-2 test:      F(2,1383) =  0.50881 [0.6013]  
+ARCH 1-1 test:    F(1,1390) =   43.333 [0.0000]**
+Normality test:   Chi^2(2)  =   1686.4 [0.0000]**
+Hetero test:      F(8,1383) =   10.290 [0.0000]**
+Hetero-X test:    F(9,1382) =   11.417 [0.0000]**
+RESET23 test:     F(2,1383) =  0.18609 [0.8302]  
+
+EQ( 4) Modelling ALL SHARE % by OLS
+       The dataset is: /Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv
+       The estimation sample is: 2009-05-01 - 2016-07-11
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+MON                -0.0524210    0.04129    -1.27  0.2044   0.0009
+TUE                -0.0939444    0.04135    -2.27  0.0232   0.0028
+WED                 0.0921779    0.04135     2.23  0.0259   0.0026
+THU                  0.163972    0.04135     3.97  0.0001   0.0083
+FRI                  0.221240    0.04129     5.36  0.0000   0.0151
+
+sigma                0.800686  RSS                1200.13651
+R^2                 0.0226268  F(4,1872) =   10.83 [0.000]**
+Adj.R^2             0.0205384  log-likelihood       -2243.61
+no. of observations      1877  no. of parameters           5
+mean(Y)             0.0662242  se(Y)                0.809038
+
+AR 1-2 test:      F(2,1870) =   41.137 [0.0000]**
+ARCH 1-1 test:    F(1,1875) =   40.216 [0.0000]**
+Normality test:   Chi^2(2)  =   846.15 [0.0000]**
+Hetero test: no regressors for test
+Hetero-X test: no regressors for test
+RESET23 test:     F(2,1870) =  0.11700 [0.8896]  
+
+EQ( 5) Modelling ALL SHARE % by OLS
+       The dataset is: /Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv
+       The estimation sample is: 2009-05-01 - 2016-07-11
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+ALL SHARE %_1        0.192385    0.02268     8.48  0.0000   0.0370
+MON                -0.0949842    0.04084    -2.33  0.0201   0.0029
+TUE                -0.0837848    0.04060    -2.06  0.0392   0.0023
+WED                  0.110251    0.04064     2.71  0.0067   0.0039
+THU                  0.146238    0.04064     3.60  0.0003   0.0069
+FRI                  0.189441    0.04070     4.65  0.0000   0.0114
+
+sigma                0.785936  RSS                1155.70885
+R^2                  0.058808  F(5,1871) =   23.38 [0.000]**
+Adj.R^2             0.0562928  log-likelihood       -2208.21
+no. of observations      1877  no. of parameters           6
+mean(Y)             0.0662242  se(Y)                0.809038
+
+AR 1-2 test:      F(2,1869) =   8.1334 [0.0003]**
+ARCH 1-1 test:    F(1,1875) =   50.684 [0.0000]**
+Normality test:   Chi^2(2)  =   854.71 [0.0000]**
+Hetero test:      F(6,1870) =   16.143 [0.0000]**
+Hetero-X test:    F(6,1870) =   16.143 [0.0000]**
+RESET23 test:     F(2,1869) =   15.441 [0.0000]**
+
+EQ( 6) Modelling ALL SHARE % by OLS
+       The dataset is: /Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv
+       The estimation sample is: 2009-05-01 - 2016-07-11
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+ALL SHARE %_1        0.178446    0.02306     7.74  0.0000   0.0310
+ALL SHARE %_2       0.0722548    0.02305     3.14  0.0017   0.0052
+MON                 -0.103843    0.04084    -2.54  0.0111   0.0034
+TUE                 -0.100380    0.04085    -2.46  0.0141   0.0032
+WED                  0.112758    0.04055     2.78  0.0055   0.0041
+THU                  0.154311    0.04063     3.80  0.0002   0.0077
+FRI                  0.184800    0.04064     4.55  0.0000   0.0109
+
+sigma                0.784088  RSS                1149.66611
+R^2                 0.0637291  F(6,1870) =   21.21 [0.000]**
+Adj.R^2              0.060725  log-likelihood       -2203.29
+no. of observations      1877  no. of parameters           7
+mean(Y)             0.0662242  se(Y)                0.809038
+
+AR 1-2 test:      F(2,1868) =   6.2245 [0.0020]**
+ARCH 1-1 test:    F(1,1875) =   46.009 [0.0000]**
+Normality test:   Chi^2(2)  =   865.98 [0.0000]**
+Hetero test:      F(8,1868) =   16.222 [0.0000]**
+Hetero-X test:    F(9,1867) =   17.195 [0.0000]**
+RESET23 test:     F(2,1868) =   21.690 [0.0000]**
+
+EQ( 7) Modelling ALL SHARE % by OLS
+       The dataset is: /Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv
+       The estimation sample is: 2004-01-01 - 2016-07-11
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+MON                -0.0962855    0.03960    -2.43  0.0151   0.0018
+TUE                 -0.102495    0.03963    -2.59  0.0097   0.0020
+WED                 0.0956744    0.03963     2.41  0.0158   0.0018
+THU                  0.165857    0.03960     4.19  0.0000   0.0053
+FRI                  0.211198    0.03960     5.33  0.0000   0.0086
+
+sigma                 1.01275  RSS                3346.74998
+R^2                 0.0165265  F(4,3263) =   13.71 [0.000]**
+Adj.R^2             0.0153208  log-likelihood          -4676
+no. of observations      3268  no. of parameters           5
+mean(Y)             0.0548254  se(Y)                  1.0206
+
+AR 1-2 test:      F(2,3261) =   50.996 [0.0000]**
+ARCH 1-1 test:    F(1,3266) =   169.04 [0.0000]**
+Normality test:   Chi^2(2)  =   5140.6 [0.0000]**
+Hetero test: no regressors for test
+Hetero-X test: no regressors for test
+RESET23 test:     F(2,3261) =0.0055036 [0.9945]  
+
+EQ( 8) Modelling ALL SHARE % by OLS
+       The dataset is: /Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv
+       The estimation sample is: 2004-01-01 - 2016-07-11
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+ALL SHARE %_1        0.173342    0.01724     10.1  0.0000   0.0301
+MON                 -0.132895    0.03918    -3.39  0.0007   0.0035
+TUE                -0.0857544    0.03907    -2.19  0.0283   0.0015
+WED                  0.113441    0.03908     2.90  0.0037   0.0026
+THU                  0.149447    0.03904     3.83  0.0001   0.0045
+FRI                  0.182448    0.03911     4.66  0.0000   0.0066
+
+sigma                0.997572  RSS                3246.17681
+R^2                 0.0460808  F(5,3262) =   31.52 [0.000]**
+Adj.R^2             0.0446186  log-likelihood       -4626.14
+no. of observations      3268  no. of parameters           6
+mean(Y)             0.0548254  se(Y)                  1.0206
+
+AR 1-2 test:      F(2,3260) =   2.8007 [0.0609]  
+ARCH 1-1 test:    F(1,3266) =   113.81 [0.0000]**
+Normality test:   Chi^2(2)  =   5505.8 [0.0000]**
+Hetero test:      F(6,3261) =   26.888 [0.0000]**
+Hetero-X test:    F(6,3261) =   26.888 [0.0000]**
+RESET23 test:     F(2,3260) =   2.3188 [0.0986]  
+
+EQ( 9) Modelling ALL SHARE % by OLS
+       The dataset is: /Users/stuartlee/Desktop/Project/Colombo Prices daily orig.csv
+       The estimation sample is: 2004-01-01 - 2016-07-11
+
+                  Coefficient  Std.Error  t-value  t-prob Part.R^2
+ALL SHARE %_1        0.176331    0.01751     10.1  0.0000   0.0302
+ALL SHARE %_2      -0.0172365    0.01751   -0.984  0.3250   0.0003
+MON                 -0.130668    0.03924    -3.33  0.0009   0.0034
+TUE                -0.0818430    0.03928    -2.08  0.0373   0.0013
+WED                  0.112083    0.03910     2.87  0.0042   0.0025
+THU                  0.147381    0.03910     3.77  0.0002   0.0043
+FRI                  0.183584    0.03913     4.69  0.0000   0.0067
+
+sigma                0.997576  RSS                 3245.2123
+R^2                 0.0463642  F(6,3261) =   26.42 [0.000]**
+Adj.R^2             0.0446096  log-likelihood       -4625.66
+no. of observations      3268  no. of parameters           7
+mean(Y)             0.0548254  se(Y)                  1.0206
+
+AR 1-2 test:      F(2,3259) =   2.2470 [0.1059]  
+ARCH 1-1 test:    F(1,3266) =   112.51 [0.0000]**
+Normality test:   Chi^2(2)  =   5477.7 [0.0000]**
+Hetero test:      F(8,3259) =   26.923 [0.0000]**
+Hetero-X test:    F(9,3258) =   30.293 [0.0000]**
+RESET23 test:     F(2,3259) =   1.3847 [0.2506]  
